@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Barra de porgreso</title>
+</head>
+<body>
+    <div class="progress-bar-container inactive">
+        <div class="counter-box">
+            <div class="inner-box"><span class="num"></span></div>
+            <svg 
+                xmlns="http://www.w3.org/2000/svg"
+                version="1.1"
+                width="200"
+                height="200"
+                >
+                <defs>
+                    <linearGradient id="gradientColor">
+                        <stop offset="0%" stop-color="#e91e63"/>
+                        <stop offset="100%" stop-color="#673ab7"/>
+                    </linearGradient>
+                </defs>
+                <circle cx="100" cy="100" r="80" stroke-linecap="round"/>
+
+            </svg>
+        </div>
+
+    </div>
+    <button class="btn" id="button1">upload</button>
+    <button class="btn inactive" id="button2" >reload</button>
+
+    
+    <script src="main.js"></script>
+</body>
+</html>
